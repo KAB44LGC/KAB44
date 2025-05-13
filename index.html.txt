@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabinet de Kinésithérapie - Hamdi Ben Jaballah</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+    header, footer { background: #0a5275; color: #fff; padding: 1rem; text-align: center; }
+    nav a { margin: 0 1rem; color: #fff; text-decoration: none; }
+    .container { padding: 2rem; max-width: 1000px; margin: auto; }
+    h1, h2 { color: #0a5275; }
+    .btn { background: #0a5275; color: #fff; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; }
+    .map-container { margin-top: 1rem; height: 300px; }
+    form input, form textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; }
+    form button { background: #0a5275; color: #fff; border: none; padding: 0.7rem; cursor: pointer; }
+    @media(max-width: 600px) {
+      nav a { display: block; margin: 0.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cabinet de Kinésithérapie - Hamdi Ben Jaballah</h1>
+    <p>44 Avenue du Général de Gaulle, La Garenne-Colombes</p>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#cabinet">Le Cabinet</a>
+      <a href="#prestations">Prestations</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#contact">Contact</a>
+      <a href="#blog">Blog</a>
+    </nav>
+  </header>
+
+  <section class="container" id="accueil">
+    <h2>Bienvenue</h2>
+    <p>Votre bien-être est notre priorité. Prenez rendez-vous en ligne en quelques clics.</p>
+    <a class="btn" href="https://www.doctolib.fr/masseur-kinesitherapeute/nanterre/hamdi-ben-jaballah" target="_blank">Prendre rendez-vous sur Doctolib</a>
+  </section>
+
+  <section class="container" id="cabinet">
+    <h2>Le Cabinet</h2>
+    <p>Situé au cœur de La Garenne-Colombes, notre cabinet vous accueille dans un espace moderne et équipé pour tous vos soins de kinésithérapie.</p>
+  </section>
+
+  <section class="container" id="prestations">
+    <h2>Prestations</h2>
+    <ul>
+      <li>Rééducation fonctionnelle</li>
+      <li>Kiné du sport</li>
+      <li>Massages thérapeutiques</li>
+      <li>Traitement des douleurs chroniques</li>
+      <li>Drainage lymphatique</li>
+    </ul>
+  </section>
+
+  <section class="container" id="tarifs">
+    <h2>Tarifs & Mutuelles</h2>
+    <p>Les séances peuvent être prises en charge par la sécurité sociale sur présentation d'une ordonnance.</p>
+    <p>Contactez-nous pour plus de détails sur les tarifs spécifiques et les mutuelles partenaires.</p>
+  </section>
+
+  <section class="container" id="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:benjaballah.mk@gmail.com">benjaballah.mk@gmail.com</a></p>
+    <form>
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=44+avenue+du+g%C3%A9n%C3%A9ral+de+gaulle+la+garenne+colombes&output=embed"
+        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+        loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section class="container" id="blog">
+    <h2>Blog & Conseils santé</h2>
+    <p>Des articles bientôt disponibles pour vous aider à prendre soin de votre santé.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hamdi Ben Jaballah - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
