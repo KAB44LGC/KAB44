@@ -1,7 +1,0 @@
-
-body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; margin: 0; padding: 0; }
-header, footer { background-color: #007B8A; color: white; text-align: center; padding: 1em 0; }
-nav a { margin: 0 10px; color: white; text-decoration: none; }
-main.container { padding: 2em; max-width: 900px; margin: auto; background: white; }
-h1, h2 { color: #007B8A; }
-.btn { display: inline-block; padding: 10px 20px; background-color: #007B8A; color: white; text-decoration: none; border-radius: 5px; margin-top: 1em; }
