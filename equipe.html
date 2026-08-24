@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html lang='fr'>
-
+<html lang="fr">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Equipe - Hamdi Ben Jaballah</title>
-  <link rel='stylesheet' href='style.css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'équipe - Cabinet de Kinésithérapie KAB44</title>
+<meta name="description" content="Découvrez l'équipe du cabinet de kinésithérapie KAB44 à La Garenne-Colombes, praticiens qualifiés en kinésithérapie générale et sportive.">
+<link rel="canonical" href="https://kab44lgc.github.io/KAB44/equipe.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="L'équipe - Cabinet de Kinésithérapie KAB44">
+<meta property="og:description" content="Présentation de nos praticiens qualifiés, spécialistes en kinésithérapie générale et sportive.">
+<meta property="og:url" content="https://kab44lgc.github.io/KAB44/equipe.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <header>
-    <h1>Cabinet de Kinésithérapie - Hamdi Ben Jaballah</h1>
-    <p>44 Avenue du Général de Gaulle, La Garenne-Colombes</p>
-    <nav>
+<header>
+  <div class="header-inner">
+    <p class="eyebrow">Kinésithérapie à La Garenne-Colombes</p>
+    <h1><a href="index.html">Cabinet de Kinésithérapie KAB44</a></h1>
+    <p class="practitioner">Hamdi Ben Jaballah — Masseur-kinésithérapeute</p>
+    <nav aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
-      <a href="equipe.html">L'équipe</a>
+      <a href="equipe.html" aria-current="page">L'équipe</a>
       <a href="prestations.html">Prestations</a>
       <a href="tarifs.html">Tarifs</a>
       <a href="contact.html">Contact</a>
       <a href="blog.html">Blog</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main class='container'>
+<main class="container">
+  <section class="card">
     <h2>Notre Équipe</h2>
     <p>Présentation de nos praticiens qualifiés, spécialistes en kinésithérapie générale et sportive.</p>
-  </main>
+    <p class="text-muted">Photos et présentations détaillées de l'équipe à venir.</p>
+  </section>
+</main>
 
-  <footer>
-    <p>&copy; 2025 Hamdi Ben Jaballah - Tous droits réservés</p>
-  </footer>
-
+<footer>
+  <p>44 Avenue du Général de Gaulle, 92250 La Garenne-Colombes · <a href="mailto:kab44lgc@gmail.com">kab44lgc@gmail.com</a></p>
+  <p>&copy; <span id="year"></span> Cabinet de Kinésithérapie KAB44 — Hamdi Ben Jaballah. Tous droits réservés.</p>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
 </body>
-
 </html>
