@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kab44lgc.github.io/KAB44/sitemap.xml
