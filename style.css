@@ -1,69 +1,261 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
+/* ===========================================================
+   Cabinet de Kinésithérapie KAB44 — feuille de style commune
+   =========================================================== */
+
+:root {
+  --color-bg: #f7f9fa;
+  --color-surface: #ffffff;
+  --color-primary: #2f6f6a;
+  --color-primary-dark: #234f4c;
+  --color-accent: #d98a3d;
+  --color-text: #22302e;
+  --color-text-muted: #55635f;
+  --color-border: #e1e6e4;
+  --radius: 12px;
+  --shadow: 0 4px 16px rgba(20, 40, 38, 0.08);
+  --max-width: 960px;
 }
 
-header,
-footer {
-    background: #0a5275;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-primary-dark);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  padding: 1.75rem 1.25rem 1.25rem;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: #d7e8e5;
+  margin: 0 0 0.35rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.9rem;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.practitioner {
+  margin: 0.25rem 0 1rem;
+  color: #e7f1ef;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 0.6rem;
 }
 
 nav a {
-    margin: 0 1rem;
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  transition: background-color 0.15s ease;
 }
 
+nav a:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+nav a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.28);
+  font-weight: 600;
+}
+
+/* ---------- Layout ---------- */
+
+main,
 .container {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: auto;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
 }
 
-h1,
-h2 {
-    color: #0a5275;
+section + section {
+  margin-top: 2rem;
 }
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.75rem;
+}
+
+h2 {
+  color: var(--color-primary-dark);
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+/* ---------- Buttons ---------- */
 
 .btn {
-    background: #0a5275;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--color-accent);
+  color: #2a1a06;
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(217, 138, 61, 0.35);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary-dark);
+  border: 1.5px solid var(--color-primary-dark);
+}
+
+/* ---------- Forms ---------- */
+
+form {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 480px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font: inherit;
+}
+
+button[type="submit"] {
+  justify-self: start;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.form-note {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* ---------- Map ---------- */
 
 .map-container {
-    margin-top: 1rem;
-    height: 300px;
+  margin-top: 1.25rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 280px;
+  border: 0;
 }
 
-form button {
-    background: #0a5275;
-    color: #fff;
-    border: none;
-    padding: 0.7rem;
-    cursor: pointer;
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+  padding: 1.75rem 1.25rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--color-border);
 }
 
-@media(max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 0.5rem 0;
-    }
+footer a {
+  color: var(--color-primary-dark);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main,
+  .container {
+    padding: 1.75rem 1rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
 }
