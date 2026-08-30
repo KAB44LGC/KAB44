@@ -364,6 +364,62 @@ form.contact-form button {
   font-family: inherit;
 }
 
+/* ---------- Booking picker (choix du praticien) ---------- */
+.booking-picker { position: relative; display: inline-block; }
+
+.booking-picker summary.btn {
+  cursor: pointer;
+  list-style: none;
+}
+.booking-picker summary.btn::-webkit-details-marker { display: none; }
+.booking-picker summary.btn::after {
+  content: '▾';
+  margin-left: 0.3em;
+  font-size: 0.8em;
+}
+.booking-picker[open] summary.btn::after { content: '▴'; }
+
+.booking-menu {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: 0;
+  z-index: 20;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 0.5rem;
+  min-width: 280px;
+  display: grid;
+  gap: 0.2rem;
+}
+.booking-menu a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.booking-menu a:hover { background: var(--paper-alt); }
+.booking-menu a .name {
+  font-weight: 600;
+  font-family: 'Fraunces', serif;
+}
+.booking-menu a .role {
+  font-size: 0.82rem;
+  color: var(--sage);
+}
+
+/* click-outside-to-close overlay trick for <details> */
+.booking-picker[open]::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+}
+
 /* ---------- Footer ---------- */
 footer.site-footer {
   background: var(--ink);
