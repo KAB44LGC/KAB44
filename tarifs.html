@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Tarifs - Cabinet de Kinésithérapie KAB44</title>
-<meta name="description" content="Tarifs des séances de kinésithérapie au cabinet KAB44 à La Garenne-Colombes : entre 32€ et 38€ la séance, prise en charge ALD et accident du travail.">
+<meta name="description" content="Tarifs des séances de kinésithérapie au cabinet KAB44 à La Garenne-Colombes : suivi de 32€ à 34€, rééducation périnéale, massages et École du Dos." />
 <link rel="canonical" href="https://kab44lgc.github.io/KAB44/tarifs.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Tarifs - Cabinet de Kinésithérapie KAB44">
-<meta property="og:description" content="La séance coûte entre 32€ et 38€. Aucun reste à charge pour les patients pris en charge à 100% (ALD, accident de travail).">
+<meta property="og:description" content="Détail des tarifs : séance de suivi de 32€ à 34€, rééducation périnéale, massages sportif et bien-être, École du Dos.">
 <meta property="og:url" content="https://kab44lgc.github.io/KAB44/tarifs.html">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+
+<header class="site-header">
   <div class="header-inner">
-    <p class="eyebrow">Kinésithérapie à La Garenne-Colombes</p>
-    <h1><a href="index.html">Cabinet de Kinésithérapie KAB44</a></h1>
-    <p class="practitioner">Hamdi Ben Jaballah — Masseur-kinésithérapeute</p>
-    <nav aria-label="Navigation principale">
+    <a href="index.html" class="brand">
+      <span class="brand-name">KAB44</span>
+      <span class="brand-tag">Cabinet de Kinésithérapie</span>
+    </a>
+    <nav class="main-nav">
       <a href="index.html">Accueil</a>
       <a href="equipe.html">L'équipe</a>
       <a href="prestations.html">Prestations</a>
-      <a href="tarifs.html" aria-current="page">Tarifs</a>
+      <a href="tarifs.html" class="active">Tarifs</a>
       <a href="contact.html">Contact</a>
       <a href="blog.html">Blog</a>
     </nav>
   </div>
-  <svg class="motif" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0,40 C150,90 350,0 600,30 C850,60 1050,10 1200,40 L1200,80 L0,80 Z"></path></svg>
 </header>
 
-<main class="container">
-  <section class="card">
-    <h2>Tarifs</h2>
-    <p>La séance coûte entre 32€ et 38€ selon le type de soin.<br>Pour les personnes prises en charge à 100% dans le cadre d'une affection de longue durée (ALD) ou en accident de travail, aucun reste à charge ne vous sera demandé.</p>
-    <p>Contactez-nous pour plus de détails sur les tarifs spécifiques et les mutuelles partenaires.</p>
-  </section>
-</main>
+<section class="container tight">
+  <span class="eyebrow">Tarifs</span>
+  <h2>Le prix de vos séances</h2>
+  <p style="max-width: 65ch;">Pour les personnes prises en charge à 100% dans le cadre d'une affection de longue durée (ALD) ou en accident de travail, aucun reste à charge ne vous sera demandé.</p>
 
-<footer>
-  <p>44 Avenue du Général de Gaulle, 92250 La Garenne-Colombes · <a href="mailto:kab44lgc@gmail.com">kab44lgc@gmail.com</a></p>
-  <p>&copy; <span id="year"></span> Cabinet de Kinésithérapie KAB44 — Hamdi Ben Jaballah. Tous droits réservés.</p>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <div style="max-width: 60ch; margin-top: 2rem;">
+    <div class="tarif-row">
+      <span>Séance de suivi de kinésithérapie</span>
+      <span class="price">32 € – 34 €</span>
+    </div>
+    <div class="tarif-row">
+      <span>Rééducation périnéale</span>
+      <span class="price">32 € – 34 €</span>
+    </div>
+    <div class="tarif-row">
+      <span>Massage de récupération sportive</span>
+      <span class="price">60 €</span>
+    </div>
+    <div class="tarif-row">
+      <span>Massage thérapeutique bien-être</span>
+      <span class="price">70 €</span>
+    </div>
+    <div class="tarif-row">
+      <span>Séance de groupe — méthode École du Dos <span style="color: var(--ink-soft); font-size: 0.85rem;">(non pris en charge)</span></span>
+      <span class="price">20 €</span>
+    </div>
+  </div>
+
+  <div class="note-box">
+    Une question sur votre prise en charge ou votre mutuelle ? <a href="contact.html">Contactez-nous</a>, nous vous répondrons rapidement.
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2026 KAB44 — Cabinet de Kinésithérapie · <a href="contact.html">Contact</a></p>
 </footer>
+
 </body>
 </html>
