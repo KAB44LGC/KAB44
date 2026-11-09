@@ -1,4 +1,6 @@
+
+
 User-agent: *
 Allow: /
 
-Sitemap: https://kab44lgc.github.io/KAB44/sitemap.xml
+Sitemap: https://www.kine-sport-la-garenne-colombes.fr/sitemap.xml
